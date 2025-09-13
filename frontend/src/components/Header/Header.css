@@ -1,0 +1,58 @@
+
+
+.header {
+    height: 37vw;
+    margin: 20px auto;
+    background: url('/header_img.png') no-repeat center center; /* Ensure the correct path and centering */
+    background-size: cover;
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation:fadeIn 3s;
+    
+    /* Explicitly set the background to transparent to avoid white boxes */
+    background: none; 
+    background-color: transparent; /* Ensure transparency */
+}
+
+.header-contents h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3rem; /* Increased heading size */
+    background: none; /* Ensure no background color on text */
+    margin: 0;
+}
+
+.header-contents p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem; /* Increased paragraph size */
+    background: none; /* Ensure no background color on text */
+    margin-top: 10px;
+}
+
+.header-contents button {
+    padding: 1vw 2.3vw;
+    font-size: max(1vw,13px); /* Keep the button text size consistent with the larger font */
+    color: white;
+    font-weight: 500;
+    background-color: #af9f9d; /* Customize button background */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.header-contents button:hover {
+    background-color: #6e1e13; /* Darken the button on hover */
+}
